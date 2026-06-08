@@ -1,0 +1,65 @@
+{
+  "name": "@aramir/antd-phone-input",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "aramir.great@gmail.com",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "import": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "lint": "eslint .",
+    "dev": "vite",
+    "build:demo": "vite build",
+    "build:lib": "vite build --config vite.lib.config.ts",
+    "prepublish": "npm run lint && npm run test && npm run build:lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "got+https://github.com/aramir/antd-phone-input.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aramir/antd-phone-input/issues"
+  },
+  "keywords": [
+    "antd",
+    "phone",
+    "country",
+    "input"
+  ],
+  "dependencies": {
+    "country-flag-icons": "^1.6",
+    "libphonenumber-js": "^1.13"
+  },
+  "peerDependencies": {
+    "antd": "^6",
+    "react": "^19"
+  },
+  "devDependencies": {
+    "@ant-design/icons": "^6.2",
+    "@eslint/js": "^10",
+    "@testing-library/dom": "^10",
+    "@testing-library/jest-dom": "^6",
+    "@testing-library/react": "^16",
+    "@testing-library/user-event": "^14",
+    "@types/node": "^25",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-syntax-highlighter": "^15",
+    "@vitejs/plugin-react": "^6",
+    "eslint-plugin-react-hooks": "^7",
+    "eslint-plugin-react-refresh": "^0.5",
+    "jsdom": "^29.1",
+    "react-syntax-highlighter": "^16",
+    "typescript": "~6",
+    "typescript-eslint": "^8.61",
+    "vite": "^8",
+    "vite-plugin-dts": "^5",
+    "vitest": "^4.1"
+  }
+}
