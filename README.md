@@ -12,9 +12,7 @@ the international [E.164](https://en.wikipedia.org/wiki/E.164) standard (`+12133
 - **Controlled & uncontrolled** -- supports both `value`/`onChange` and `defaultValue`
 - **Full keyboard navigation**
 
-## Demo
-
-[xxx]
+## [View Demo Site](https://aramir.github.io/antd-phone-input)
 
 ## Installation
 
@@ -22,14 +20,7 @@ the international [E.164](https://en.wikipedia.org/wiki/E.164) standard (`+12133
 npm install antd-phone-input
 ```
 
-### Peer dependencies
-
-| Package | Version |
-|---|---|
-| `react` | `^19` |
-| `antd` | `^6` |
-
-## Basic usage
+## Usage
 
 ```tsx
 import { PhoneInput } from "antd-phone-input";
@@ -109,7 +100,7 @@ function ContactForm() {
 />
 ```
 
-## Props
+## Props Reference
 
 | Prop | Type | Default | Description |
 |---|---|---|---|
