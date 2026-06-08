@@ -12,7 +12,7 @@ the international [E.164](https://en.wikipedia.org/wiki/E.164) standard (`+12133
 - **Controlled & uncontrolled** -- supports both `value`/`onChange` and `defaultValue`
 - **Full keyboard navigation**
 
-## [View Demo Site](https://aramir.github.io/antd-phone-input)
+## [View Demo](https://aramir.github.io/antd-phone-input)
 
 <a href="https://aramir.github.io/antd-phone-input"><img src="https://aramir.github.io/antd-phone-input/sample.png" height="32" /></a>
 

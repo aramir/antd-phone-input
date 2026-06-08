@@ -1,5 +1,5 @@
 import { ConfigProvider, Layout, Switch, Tabs, TabsProps, theme, Typography } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MoonOutlined, SunOutlined } from "@ant-design/icons";
 import Compact from "./tabs/Basic.tsx";
 import Default from "./tabs/Default.tsx";
@@ -40,9 +40,12 @@ const tabs: TabsProps["items"] = [
 export default function App() {
 	const [dark, setDark] = useState(true);
 
+	useEffect(() => {
+		document.body.style.backgroundColor = dark ? "#141414" : "#fff";
+	}, [dark]);
+
 	const toggleTheme = (isDark: boolean) => {
 		setDark(isDark);
-		document.body.style.backgroundColor = isDark ? "#141414" : "#fff";
 	};
 
 	return (

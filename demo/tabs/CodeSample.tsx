@@ -1,8 +1,13 @@
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import tsx from "react-syntax-highlighter/dist/esm/languages/prism/tsx";
+import typescript from "react-syntax-highlighter/dist/esm/languages/prism/typescript";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Button, theme, Typography } from "antd";
 import { CheckOutlined, CopyOutlined } from "@ant-design/icons";
 import { useState } from "react";
+
+SyntaxHighlighter.registerLanguage("tsx", tsx);
+SyntaxHighlighter.registerLanguage("typescript", typescript);
 
 type CodeSampleProps = {
 	code: string;
