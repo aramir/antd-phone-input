@@ -17,11 +17,11 @@
     "dev": "vite",
     "build:demo": "vite build",
     "build:lib": "vite build --config vite.lib.config.ts",
-    "prepublish": "npm run lint && npm run test && npm run build:lib"
+    "prepublishOnly": "npm run lint && npm run test && npm run build:lib"
   },
   "repository": {
     "type": "git",
-    "url": "got+https://github.com/aramir/antd-phone-input.git"
+    "url": "git+https://github.com/aramir/antd-phone-input.git"
   },
   "bugs": {
     "url": "https://github.com/aramir/antd-phone-input/issues"
