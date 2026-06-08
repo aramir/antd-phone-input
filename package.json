@@ -17,7 +17,8 @@
     "dev": "vite",
     "build:demo": "vite build",
     "build:lib": "vite build --config vite.lib.config.ts",
-    "prepublishOnly": "npm run lint && npm run test && npm run build:lib"
+    "prepublishOnly": "npm run lint && npm run test && npm run build:lib",
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
