@@ -14,6 +14,8 @@ the international [E.164](https://en.wikipedia.org/wiki/E.164) standard (`+12133
 
 ## [View Demo Site](https://aramir.github.io/antd-phone-input)
 
+[![demo](https://aramir.github.io/antd-phone-input/sample.png)](https://aramir.github.io/antd-phone-input)
+
 ## Installation
 
 ```sh
