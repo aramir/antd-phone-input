@@ -26,10 +26,10 @@ jobs:
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
-      - name: Bump minor version
+      - name: Bump patch version
         id: version
         run: |
-          npm version minor --no-git-tag-version
+          npm version patch --no-git-tag-version
           echo "number=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
 
       - name: Commit and tag version bump
