@@ -11,14 +11,17 @@
     "import": "./dist/index.js",
     "types": "./dist/index.d.ts"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "vitest run",
     "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
     "dev": "vite",
     "build:demo": "vite build",
     "build:lib": "vite build --config vite.lib.config.ts",
-    "prepublishOnly": "npm run lint && npm run test && npm run build:lib",
-    "publish": "npm publish --access public"
+    "prepublishOnly": "npm run typecheck && npm run lint && npm run test && npm run build:lib"
   },
   "repository": {
     "type": "git",
